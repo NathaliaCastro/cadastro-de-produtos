@@ -22,7 +22,7 @@
 	<div class="container">
 		<ui:include src="/common/navbar.xhtml" />
 
-		<h1>Cadastro de Produtos</h1>
+		<h1 style="color:CornflowerBlue">Cadastro de Produtos</h1>
 		<div>
 			<h:form>
 				<div class="form-group">
@@ -44,8 +44,8 @@
 				</div>
 
 				<div>
-					<h:commandButton value="Adicionar" class="btn btn-info"
-						action="#{produtos.adicionar(produto)}" />
+					<h:commandButton value="Incluir" class="btn btn-success"
+						action="#{produtos.incluir(produto)}" />
 				</div>
 
 				<h:dataTable value="#{produtos.produtos}" var="prod"
@@ -70,8 +70,8 @@
 					</h:column>
 
 					<h:column>
-						<h:commandButton value="Excluir" class="btn btn-danger"
-							action="#{produtos.remover(prod)}" />
+						<h:commandButton value="Remover" class="btn btn-danger" 
+						action="#{produtos.remover(prod)}" />
 					</h:column>
 
 				</h:dataTable>

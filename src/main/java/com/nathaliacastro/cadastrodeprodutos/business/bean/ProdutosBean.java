@@ -22,7 +22,7 @@ public class ProdutosBean {
 		return produtos;
 	}
 
-	public void adicionar(ProdutoBean produto) {
+	public void incluir(ProdutoBean produto) {
 		produtos.add(produto);
 	}
 
